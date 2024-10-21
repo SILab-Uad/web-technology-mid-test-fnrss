@@ -40,6 +40,13 @@ function handleGeneratePassword() {
     includeSpecialChars: document.getElementById("includeSpecialChars").checked,
   };
 
+  try {
+        const password = generatePassword(length, options);
+        document.getElementById("passwordOutput").textContent = password;
+    } catch (error) {
+        alert(error.message); // Display error message if no character type is selected
+    }
+
   // TODO: Add event listener to the button to call generatePassword and display the output
 
   const password = generatePassword(length, options);
