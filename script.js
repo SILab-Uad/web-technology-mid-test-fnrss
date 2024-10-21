@@ -40,12 +40,12 @@ function handleGeneratePassword() {
     includeSpecialChars: document.getElementById("includeSpecialChars").checked,
   };
 
-  try {
-        const password = generatePassword(length, options);
-        document.getElementById("passwordOutput").textContent = password;
-    } catch (error) {
-        alert(error.message); // Display error message if no character type is selected
-    }
+//   try {
+//         const password = generatePassword(length, options);
+//         document.getElementById("passwordOutput").textContent = password;
+//     } catch (error) {
+//         alert(error.message); 
+//     }
 
   // TODO: Add event listener to the button to call generatePassword and display the output
 
@@ -55,20 +55,15 @@ function handleGeneratePassword() {
 // BONUS: Implement the copy to clipboard functionality
 
 function copyToClipboard() {
-  const passwordOutput = document.getElementById("passwordOutput");
-  const password = passwordOutput.textContent;
-
-  if (password) {
-    navigator.clipboard
-      .writeText(password)
-      .then(() => {
-        alert("Password copied to clipboard!");
-      })
-      .catch((err) => {
-        alert("Failed to copy: ", err);
-      });
-  } else {
-    alert("No password to copy!");
-  }
-}
-document.getElementById("copyBtn").addEventListener("click", copyToClipboard);
+    const password = document.getElementById("passwordOutput").textContent;
+    if (password) {
+        navigator.clipboard.writeText(password).then(() => {
+            alert("Password copied to clipboard!");
+        });
+    } else {
+        alert("No password to copy!");
+    }
+};
+module.exports = {
+    generatePassword
+};
