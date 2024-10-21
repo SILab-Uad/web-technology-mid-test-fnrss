@@ -15,6 +15,8 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
+    border-top: solid 5px red;
+    border-bottom: solid 5px blue;
 }
 
 /* TODO: Add styles for labels, inputs, buttons, and output text */
@@ -25,3 +27,39 @@ h1 {
 }
 
 /* Add more styles here as needed */
+
+#generateBtn {
+color: rgb(4, 13, 13);
+margin-top: 8px;
+}
+
+.upper {
+    border: solid black 2px;
+    margin-bottom: 5px;
+}
+
+.lower {
+    border: solid black 2px;
+
+}
+
+.number {
+    border: solid black 2px;
+    margin-top: 5px;
+}
+
+.chars {
+    border: solid black 2px;
+    margin-top: 5px;
+}
+
+.container>#generateBtn{
+    background-color: salmon;
+}
+
+.container>#copyBtn{
+    background-color: aqua;
+}
+
+
+
