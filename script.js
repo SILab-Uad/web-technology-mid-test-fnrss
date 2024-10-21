@@ -39,12 +39,12 @@ function handleGeneratePassword() {
     includeSpecialChars: document.getElementById("includeSpecialChars").checked,
   };
 
-//   try {
-//         const password = generatePassword(length, options);
-//         document.getElementById("passwordOutput").textContent = password;
-//     } catch (error) {
-//         alert(error.message); 
-//     }
+  try {
+        const password = generatePassword(length, options);
+        document.getElementById("passwordOutput").textContent = password;
+    } catch (error) {
+        alert(error.message); 
+    }
 
   // TODO: Add event listener to the button to call generatePassword and display the output
 
