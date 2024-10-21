@@ -16,7 +16,6 @@ const generatePassword = (length, options) => {
 
   if (characterPool === "") {
     throw new Error("Please select at least one option for password generation!");
-    return "";
   }
 
   let password = "";
