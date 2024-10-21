@@ -15,7 +15,7 @@ const generatePassword = (length, options) => {
   if (options.includeSpecialChars) characterPool += specialChars;
 
   if (characterPool === "") {
-    alert("Please select at least one option for password generation!");
+    throw new Error("Please select at least one option for password generation!");
     return "";
   }
 
@@ -41,7 +41,7 @@ function handleGeneratePassword() {
   };
 
   // TODO: Add event listener to the button to call generatePassword and display the output
-  
+
   const password = generatePassword(length, options);
   document.getElementById("passwordOutput").textContent = password;
 }
