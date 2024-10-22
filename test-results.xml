@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.011" tests="6" failures="1">
-  <testsuite name="Root Suite" timestamp="2024-10-21T16:05:59" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="0.024" tests="6" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-10-22T01:51:06" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="Password Generator Tests" timestamp="2024-10-21T16:05:59" tests="6" file="C:\Users\ASUS\web-technology-mid-test-fnrss\test\test.js" time="0.009" failures="1">
-    <testcase name="Password Generator Tests should generate a password of the specified length" time="0.001" classname="should generate a password of the specified length">
+  <testsuite name="Password Generator Tests" timestamp="2024-10-22T01:51:06" tests="6" file="C:\Users\ASUS\web-technology-mid-test-fnrss\test\test.js" time="0.021" failures="1">
+    <testcase name="Password Generator Tests should generate a password of the specified length" time="0.003" classname="should generate a password of the specified length">
     </testcase>
-    <testcase name="Password Generator Tests should contain uppercase letters if selected" time="0.000" classname="should contain uppercase letters if selected">
+    <testcase name="Password Generator Tests should contain uppercase letters if selected" time="0.001" classname="should contain uppercase letters if selected">
     </testcase>
     <testcase name="Password Generator Tests should contain lowercase letters if selected" time="0.000" classname="should contain lowercase letters if selected">
     </testcase>

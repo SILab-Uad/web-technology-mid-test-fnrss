@@ -15,7 +15,7 @@ const generatePassword = (length, options) => {
   if (options.includeSpecialChars) characterPool += specialChars;
 
   if (characterPool === "") {
-    throw new Error("Please select at least one option for password generation!");
+    throw new Error("At least one character type must be selected.");
   }
 
   let password = "";
